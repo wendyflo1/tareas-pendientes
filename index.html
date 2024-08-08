@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Iconos de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--fuentes google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Tareas</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="encabezado">
+            <div id="fecha"></div>
+            <h1>Lista de Tareas</h1>
+            <h3>Agrega las tareas pendientes por día.<br>"No dejes para mañana lo que puedes hacer hoy."</h3>
+        </div>
+        <div class="agregar">
+            <input type="text" name="" id="input" placeholder="Escribe una tarea.">
+            <i id="botonAgregar" class="bi bi-plus-circle-fill"></i>
+        </div>
+        <div class="tareas">
+            <h2>Tareas Pendientes</h2>
+            <ul id="lista">
+                <!--Etiqueta li que esta en main.js-->
+            </ul>
+        </div>
+    </div>
+
+    <!-- JS va al final-->
+    <script src="main.js"></script>
+</body>
+
+</html>
