@@ -1,77 +1,132 @@
 *{
-    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-header{
-    background-color: #2F3645;
+body{
+   font-family: Marcellus; 
+   font-weight: 100;
+   font-style: normal;
+   background-color: white;
+   background: linear-gradient(185deg, rgb(162, 139, 85) 0%, rgb(134, 171, 137) 59%, rgb(203, 226, 181) 100%); 
+   background-size: contain;
+   background-position: center;
+   height: 100vh;
+   color: #4a7a82;
+   text-shadow: -0.1px 0 #7469B6, 0 0.1px #7469B6, 0.1px 0 #7469B6, 0 -.01px #7469B6;
+   justify-content: center;
+   text-align: center;
+   scroll-behavior: smooth;
+}
+.contenedor{
+   width: 450px;
+   max-width: 80%;
+   height: 85vh;
+   margin: 0 auto;
+   box-shadow: 2px 2px 20px;
+   padding-left: 25px;
+   padding-right: 25px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   background-color: rgba(226, 245, 224, 0.51);
+   border-radius: 25px;
+   margin-top: 20px;
 }
 
-header span{
-    color: #E6B9A6;
-
+.cajita {
+  scroll-padding: 5px;
+  overflow: auto;
+  height: 38vh;
+  border-radius: 5%;
+  box-shadow: 0px 0px 2px;
+  padding: 7px;
+  background-color: #e3d5d561;
+  scrollbar-width: none;
 }
 
-.nav-item a{
-    color: beige;
-}
 
-/* visitado */
-.nav-item a:visited{
-    color: #EEEDEB;
-
-}
-
-.nav-item a:hover{
-    color: blue;
-}
-
-#nav-button{
-    background-color: #E6B9A6;
-}
-
-.icon-habilidades{
-    background-color: #E6B9A6;
-    color: beige;
-    width: 60px;
-    height: 60px;
-    border-radius: 50px;
-    font-size: 1.5em;
-    text-align: center;
-    padding: 4px;
-}
-.img-proyecto1{
-    background-image: url('imagenes/clon.png');
-    background: rgba(76, 175, 80, 0.3);
-    background-size: contain;
-    background-repeat: no-repeat;
-
-}
-/* .img-proyecto1{ 
-    background-image: url(/imagenes/clonpin.png);
-    background-size: cover; /*Ajusta el tamaño de la imagen para cubrir el contenedor 
-    background-repeat: no-repeat;
-    position: relative; /* Necesario para colocar el pseudo-elemento 
-    } */
-footer{
-    background-color: #2F3645 ;
-}
-footer .icon-footer i{
-    color: beige ;
-}
-footer p{
-    color: beige ;
-}
-
-footer p a{
-    color:  beige ;
-}
-
-.icon-boton2{
-    background-color: #2F3645 ;
-    border-color: #2F3645;
+.marcellus-regular {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.agregar{
+  background-color: rgba(133, 34, 34, 0.186);
+  border-radius: 15px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 30px;
+  
 
 }
 
-#app{
-    color: palevioletred
+.agregar input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #b6b66961;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.98);
+    font-weight: 500;
+}
+.agregar input::placeholder{
+  font-size: 1.05rem;
+  }
+  
+.agregar span{
+font-size: 2rem;
+padding: 5px;
+}
+
+.agregar span:hover{
+ transform: scale(1.15); 
+ cursor: pointer;
+}
+
+.tareas h2{
+text-align: left;
+margin: 20px;
+}
+
+.tareas li{
+  background-color: #7569b661;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.tareas{
+  font-size: 1.5rem;
+}
+
+.tareas p{
+  margin: 0;
+  text-wrap: wrap;
+  
+  align-items: start;
+} 
+
+.tareas ul{
+  padding: 0%;
+}
+
+.tachado{
+  text-decoration: line-through;
+  color: #7569b661;
+}
+
+.li span:hover{
+  transform: scale(1.2); 
+  cursor: pointer;
+
 }
