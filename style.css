@@ -1,102 +1,77 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    font-family: "DM Sans", sans-serif;
 }
 
-body {
+header{
+    background-color: #2F3645;
+}
 
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    background: rgb(255, 251, 218);
-    background: radial-gradient(circle, rgb(255, 236, 158) 0%, rgb(237, 148, 85) 100%);
-    background-repeat: no-repeat;
+header span{
+    color: #E6B9A6;
+
+}
+
+.nav-item a{
+    color: beige;
+}
+
+/* visitado */
+.nav-item a:visited{
+    color: #EEEDEB;
+
+}
+
+.nav-item a:hover{
+    color: blue;
+}
+
+#nav-button{
+    background-color: #E6B9A6;
+}
+
+.icon-habilidades{
+    background-color: #E6B9A6;
+    color: beige;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 4px;
+}
+.img-proyecto1{
+    background-image: url('imagenes/clon.png');
+    background: rgba(76, 175, 80, 0.3);
     background-size: contain;
-    background-position: center;
-    height: 100vh;
-    color: #850000;
-    display: flex;
-    justify-content: center;
+    background-repeat: no-repeat;
+
+}
+/* .img-proyecto1{ 
+    background-image: url(/imagenes/clonpin.png);
+    background-size: cover; /*Ajusta el tamaño de la imagen para cubrir el contenedor 
+    background-repeat: no-repeat;
+    position: relative; /* Necesario para colocar el pseudo-elemento 
+    } */
+footer{
+    background-color: #2F3645 ;
+}
+footer .icon-footer i{
+    color: beige ;
+}
+footer p{
+    color: beige ;
+}
+
+footer p a{
+    color:  beige ;
+}
+
+.icon-boton2{
+    background-color: #2F3645 ;
+    border-color: #2F3645;
 
 }
 
-.contenedor {
-    border-radius: 25px;
-    background-color: #FFEC9E;
-    max-width: 80%;
-    width: 400px;
-    height: 600px;
-    margin: 0 auto;
-    padding: 40px;
-}
-
-.encabezado {
-    padding: 10px 0 5px 0;
-}
-
-.agregar {
-    background-color: #e0d990;
-    border-radius: 15px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    gap: 70px;
-}
-
-.agregar input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 8px;
-    background-color: rgb(219, 204, 184);
-    padding-left: 10px;
-}
-
-.agregar input::placeholder {
-    font-size: 1.3rem;
-    color: #956032;
-}
-
-.agregar i {
-    font-size: 45px;
-    color: #d18c87;
-}
-
-.agregar i:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-/*sección de tareas*/
-.tareas h2 {
-    margin-bottom: 18px;
-    color: #3e0606;
-}
-
-.tareas li {
-    background-color: #e0d990;
-    border-radius: 15px;
-    padding: 10px;
-    color: #003285;
-    margin: 5px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.tareas {
-    font-size: 25px;
-    font-weight: 700;
-}
-
-.tareas i:hover {
-    color: #737c5e;
-    cursor: pointer;
-}
-
-.tachado {
-    text-decoration: line-through;
-    color: #5B99C2;
+#app{
+    color: palevioletred
 }

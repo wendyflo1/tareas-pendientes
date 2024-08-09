@@ -1,44 +1,306 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Iconos de bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--fuentes google-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
-    <!--css-->
-    <link rel="stylesheet" href="style.css">
-    <title>Lista de Tareas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- se agrega  desde googlefonts   -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet">
+  <!-- PASO 1 CDN BOOSTRAP*/ instalar con el CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Iconos de bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="shortcut icon" href="imagenes/file-person-fill.svg" type="image/x-icon">
+  <!-- Enlace con mi CSS -->
+  <link rel="stylesheet" href="style.css">
+  <title>Wen</title>
+  <!-- tambien se puede agregar para un js de animacion <div id="app"></div> -->
+
 </head>
 
-<body>
-    <div class="contenedor">
-        <div class="encabezado">
-            <div id="fecha"></div>
-            <h1>Lista de Tareas</h1>
-            <h3>Agrega las tareas pendientes por día.<br>"No dejes para mañana lo que puedes hacer hoy."</h3>
-        </div>
-        <div class="agregar">
-            <input type="text" name="" id="input" placeholder="Escribe una tarea.">
-            <i id="botonAgregar" class="bi bi-plus-circle-fill"></i>
-        </div>
-        <div class="tareas">
-            <h2>Tareas Pendientes</h2>
-            <ul id="lista">
-                <!--Etiqueta li que esta en main.js-->
-            </ul>
-        </div>
-    </div>
 
-    <!-- JS va al final-->
-    <script src="main.js"></script>
+<body>
+  <!-- PARA CENTRAR UNA PARTE VISUAL SE AGREGA: <div class="container"> </div> DESDE antes de header dentro de body-->
+  <header class="d-flex justify-content-center py-3">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a id="nav-button" href="#sobre mi" class="nav-link active" aria-current="page">Sobre
+          mi
+
+        </a>
+
+      </li>
+
+      <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+      <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+      <li class="nav-item"><a href="#testimonios" class="nav-link">Certificaciones</a></li>
+      <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+
+    </ul>
+
+  </header>
+
+  <main>
+    <section id="sobre-mi">
+      <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4 rounded-circle" src="imagenes/yo.jpg" alt="Foto" width="200">
+        <!--  height="57" -->
+        <h1 class="display-5 fw-bold text-body-emphasis">Wen</h1>
+        <h2 id="app"></h2>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Soy Licenciada en Informatica, Conocimientos de Computación y Técnico, Paquetería Office
+            Microsoft 360, servicios gratuitos de herramientas Google Soporte Tecnico en Sistemas Operativos Windows,
+            Versiones de Linux y maquinas virtuales.
+            Programación Jr Python, manejo de etiquetas páginas web front end, Diseño Web con herramientas para CMS.
+            Conocimientos y manejo de herramientas de Diseño Digital de productos y servicios en formato virtual.
+            Investigación y Análisis de Benchmark - Protocolo de atención a prospecto.
+            Actividad de capturista, verificador y digitalizador en CATD.
+
+            Cuento con competencia y principios, esfuerzo, compromiso, habilidad de aprendizaje constante y adaptación a
+            cambios que se presenten, Trabajo en equipo, detallista, responsable, organización y con mejora continua.
+
+          </p>
+
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Mi Trayectoria</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="habilidades">
+      <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">Habilidades</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="bi bi-code-slash icon-habilidades"></i>
+              <!-- se agrega el icono desde botstrap en los iconos -->
+
+            </div>
+
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Programacion Jr</h3>
+              <p> Programacion en desarrollo web front end manejo de etiquetas, WordPress CMS, consola en Sistema
+                Operativo Windows y Ubuntu </p>
+              <a href="#" class="btn btn-primary icon-boton2">
+                Mas
+
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="col d-flex align-items-start">
+            <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="bi bi-laptop icon-habilidades"></i>
+            </div>
+
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Soporte Tecnico</h3>
+              <p> Mantenimiento computadoras y soporte remoto en Sistemas Operativos Windows.</p>
+              <a href="#" class="btn btn-primary icon-boton2">
+                Mas
+
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="col d-flex align-items-start">
+            <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="bi bi-cast icon-habilidades"></i>
+
+            </div>
+
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Streaming y Community Manager</h3>
+              <p>Herramienta de streaming remoto. Manejo de Administracion de contenido y publicacion en Redes Sociales.
+              </p>
+              <a href="#" class="btn btn-primary icon-boton2">
+                Mas
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="proyectos">
+      <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">Proyectos</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="imagenes/clon.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Clon de pinterest</h5>
+                <p class="card-text">Proyecto realizado en el bootcamp Tecnochicas mediante HTML y CSS.
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="imagenes/stream.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Streaming en Redes Sociales</h5>
+                <p class="card-text"> Manipulacion de administracion en editor de videos y streaming para redes
+                  sociales.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col">
+            <div class="card h-100">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+
+    </section>
+
+    <section id="testimonio" class="mt-5 container">
+      <h2 class="pb-2 border-bottom">Testimonios y Certificados.</h2>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Card carousel -->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="card border-0" style="width: 18rem;">
+                <img src="imagenes/certificado.PNG" alt="...">
+                <!-- agregar antes de alt="" para hacer la imagen circular class="rounded-circle card-img-top" -->
+                <div class="card-body text-center">
+                  <h5 class="card-title text-center">Linux Unhatched</h5>
+                  <div class="card-header">
+                    Certificado
+                  </div>
+                  <p class="card-text text-center">Curso completado de NDG Linux Unhatched en Cisco Networking Academy
+                    2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="card border-0" style="width: 18rem;">
+                <img src="imagenes/ieem.jpg" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title text-center">Instituto Electoral del Estado de Mexico</h5>
+                  <div class="card-header">
+                    Jornada Electoral 2024
+                  </div>
+                  <p class="card-text text-center">Carta de recomendacion por IEEM como Capturista PREP durante la
+                    jornada electoral 2 de Junio 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="card border-0" style="width: 18rem;">
+                <img src="assets/fotoroca.jpg" class="rounded-circle card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title text-center">Card title</h5>
+                  <div class="card-header">
+                    Featured
+                  </div>
+                  <p class="card-text text-center">Some quick example text to build on the card title and make up the
+                    bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="container my-5">
+        <div class="p-5 text-center bg-body-tertiary rounded-3">
+          <i class="bi bi-envelope" style="font-size: 3rem; color: cornflowerblue">
+          </i>
+          <h1 class="text-body-emphasis">¡Contáctame!</h1>
+
+          <p class="col-lg-8 mx-auto fs-5 text-muted">
+            Contáctame para iniciar un proyecto Y coloborar con tu idea.
+          </p>
+
+          <div class="d-inline-flex gap-2 mb-5">
+            <a href="mailto:w3nd11011@gmail.com">
+              <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill icon-boton2"
+                type="button">
+                Contacto
+              </button>
+            </a>
+            <!-- <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button"> 
+              Secondary link
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center pb-3 mb-3">
+      <li class="nav-item"><a href="https://github.com/wendyflo1" target="_blank"
+          class="nav-link px-2 text-body-secondary icon-footer"><i class="bi bi-github"></i></a></li>
+      <li class="nav-item"><a href="https://www.linkedin.com/in/wendy-santamaria-flores-01b92223a/" targert="_blank"
+          class="nav-link px-2 text-body-secondary icon-footer"><i class="bi bi-linkedin"></i></a></li>
+      <li class="nav-item"><a href="https://profile.indeed.com/?hl=es_MX&co=MX&from=gnav-homepage" target="_blank"
+          class="nav-link px-2 text-body-secondary icon-footer"><i class="bi bi-briefcase-fill"></i></a></li>
+
+    </ul>
+
+    <p class="text-center">Creado por Wendy en el bootcamp de <a href="https://tecnolochicas.mx"
+        target="_blank">Tecnolochicas PRO</a></p>
+
+  </footer>
+  <!-- typewriter -->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <!-- js -->
+  <script src="main.js"></script>
+
+  <!-- PASO 2 SCRIPT BOOSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
